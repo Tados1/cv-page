@@ -1,0 +1,159 @@
+.about-me  {
+    height: 100vh;
+}
+
+.about-me-container {
+    text-shadow: 0 0 100px rgb(10, 215, 230);
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.letter {
+    display: inline-block;
+    transition: 0.4s;
+    transform: translateX(0);
+    font-size: 130px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: grab;
+}
+
+.transparent-letter {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.letter:hover {
+    transform: translatey(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(182, 77%, 38%), hsl(221, 59%, 45%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle p {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 7px;
+    background: -webkit-linear-gradient(120deg, hsl(182, 77%, 38%), hsl(221, 59%, 45%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subtitle p::after {
+    content: '';
+    display: block;
+    margin: 5px auto;
+    width: 700px;
+    height: 3px;
+    background-image: linear-gradient(120deg, hsl(221, 59%, 45%), hsl(182, 77%, 38%));
+    border-radius: 5px;
+}
+
+.my-photo img {
+    border-radius: 50%;
+    width: 400px;
+    border: 4px solid #03e8f48a;
+    box-shadow: 0 0 20px rgb(10, 215, 230);
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0.7;
+    margin: 50px auto;
+}
+
+.my-photo img:hover,
+.my-photo img:active {
+    transition: all 0.5s;
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 300px rgb(10, 215, 230);
+}
+
+
+/* ---------------------- CSS media queries ------------------- */
+
+
+@media only screen and (max-width: 1100px) {
+    .letter {
+        font-size: 120px;
+    }
+
+    .subtitle p {
+        font-size: 50px;
+        letter-spacing: 4px;
+    }
+
+    .transparent-letter {
+        margin-right: 20px;
+    }
+    
+    .subtitle p::after {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-container {
+        width: 100%;
+        left: 0;
+    }
+
+    .letter {
+        font-size: 100px;
+    }
+    
+    .subtitle p {
+        font-size: 45px;
+    }
+    
+    .subtitle p::after {
+        width: 520px;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .about-me-container {
+        top: 20%;
+    }
+
+    .letter {
+        font-size: 75px;
+    }
+    
+    .subtitle p {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+    
+    .subtitle p::after {
+        width: 380px;
+    }
+    
+    .my-photo img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .letter {
+        margin-right: 5px;
+        font-size: 45px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .subtitle p {
+        font-size: 25px;
+    }
+
+    .subtitle p::after {
+        width: 280px;
+    }
+
+    .my-photo img {
+        width: 250px;
+    }
+}

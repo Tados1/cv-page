@@ -1,0 +1,387 @@
+.contact-box {
+    font-family: sans-serif;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-box-text {
+    width: 30vw;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.contact-box-text h2 {
+    font-size: 80px;
+    padding: 0;
+    margin-top: 150px;
+    color: #03e9f4;
+    text-align: center;
+}
+
+.contact-box-text p {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.contact-box form {
+    max-width: 400px;
+    margin-right: 10%;
+}
+
+.contact-box .user-box {
+    position: relative;
+    width: 400px;
+}
+
+.contact-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+
+.contact-box .user-box textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+
+.contact-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.contact-box .user-box input:focus~label, .contact-box .user-box textarea:focus~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.contact-box .user-box label.open {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.contact-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    transform: translateX(-50%);
+    left: 50%;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+.contact-box button span {
+    position: absolute;
+    display: block;
+}
+
+.contact-box button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.contact-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.contact-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.contact-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* ---------------------- CSS media queries ------------------- */
+
+@media only screen and (max-width: 1500px) {
+    .contact-box-text h2 {
+        font-size: 60px;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .contact-box-text h2 {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .contact-box-text p {
+        margin: 10px auto;
+    }
+
+    .contact-box  form {
+        margin-bottom: 100px;
+    }
+
+    .contact-box .user-box {
+        position: relative;
+        width: 300px;
+    }
+    
+    .contact-box .user-box input {
+        padding: 5px 0;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .contact-box .user-box textarea {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    
+    
+    .contact-box .user-box label {
+        font-size: 14px;
+    }
+    
+    .contact-box .user-box input:focus~label, .contact-box .user-box textarea:focus~label {
+        top: -20px;
+        left: 0;
+        font-size: 12px;
+    }
+    
+    .contact-box form a {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-box-text h2 {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+    .contact-box-text p {
+        font-size: 18px;
+    }
+
+    .contact-box form {
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact-box-text {
+        width: 90vw;
+        margin: 0;
+    }
+    
+    .contact-box-text h2 {
+        font-size: 50px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contact-box-text p {
+        width: 70%;
+        margin: 10px auto;
+    }
+    
+    .contact-box form {
+        margin: 100px 0px 0px 0px;
+    }
+    
+    .contact-box .user-box {
+        width: 400px;
+    }
+    
+    .contact-box .user-box input {
+        padding: 10px 0;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .contact-box .user-box label {
+        font-size: 16px;
+    }
+    
+    .contact-box form a {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .contact-box .user-box textarea {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .contact-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact-box-text {
+        width: 90vw;
+        margin: 0;
+    }
+    
+    .contact-box-text h2 {
+        font-size: 35px;
+        padding: 0;
+        padding-top: 0;
+    }
+    
+    .contact-box-text p {
+        width: 80%;
+        font-size: 17px;
+        margin: 0 auto;
+    }
+    
+    .contact-box form {
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .contact-box .user-box {
+        width: 350px;
+    }
+    
+    .contact-box .user-box input {
+        padding: 10px 0;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .contact-box .user-box label {
+        font-size: 16px;
+    }
+    
+    .contact-box form a {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .contact-box .user-box textarea {
+        font-size: 14px;
+    }
+
+    .contact-box form button {
+        font-size: 16px;
+        margin: 30px 0 0 0;
+    }
+
+}

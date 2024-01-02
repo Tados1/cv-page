@@ -1,0 +1,207 @@
+.my-skills {
+    height: 100vh;
+    background: black;
+}
+
+.my-skills-container {
+    text-align: center;
+    color: white;
+    font-size: 130px;
+    margin: 200px auto;
+    width: 90%;
+    position: absolute;
+    left: 10%;
+}
+
+.my-skills-container .text {
+    margin-right: 40px;
+}
+
+.my-skills-container > div {
+    display: inline-block;
+    height: 150px;
+    line-height: 150px;
+    overflow: hidden;
+}
+
+div.word-list span {
+    display: block;
+}
+
+div.word-list {
+    position: relative;
+    top: 0px;
+    animation: cycle ease 5s infinite; 
+}
+
+@keyframes cycle {
+    0% {top: 0}
+   8% {top: 0}
+   16% {top: -150px}
+   24% {top: -150px}
+   32% {top: -300px}
+   40% {top: -300px}
+   48% {top: -450px}
+   56% {top: -450px}
+   64% {top: -600px}
+   72% {top: -600px}
+   80% {top: -750px}
+   88% {top: -750px}
+   100% {top: -0px}
+}
+
+span:nth-child(1) {
+    color: #E54D26;
+}
+
+span:nth-child(2) {
+    color: #264DE4;
+}
+
+span:nth-child(3) {
+    color: #F7DE1F;
+}
+
+span:nth-child(4) {
+    color: #0FDBF6;
+}
+
+span:nth-child(5) {
+    color: #3775A8;
+}
+
+span:nth-child(6) {
+    color: #F05133;
+}
+
+.skills-icons {
+    font-size: 400px;
+    position: absolute;
+    top: 140%;
+    transform: translateX(-50%);
+    left: 55%;
+    width: 400px;
+    height: 400px;
+    line-height: 0px;
+    overflow: hidden;
+}
+
+.icon {
+    position: relative;
+    animation: cycle2 ease 5s infinite;  
+}
+
+@keyframes cycle2 {
+    0% {top: 0}
+   8% {top: 0}
+   16% {top: -400px}
+   24% {top: -400px}
+   32% {top: -800px}
+   40% {top: -800px}
+   48% {top: -1200px}
+   56% {top: -1200px}
+   64% {top: -1600px}
+   72% {top: -1600px}
+   80% {top: -2000px}
+   88% {top: -2000px}
+   100% {top: 0}
+}
+
+.skills-icons .html-icon {
+    color: #E54D26;
+}
+
+.skills-icons .css-icon {
+    color: #264DE4;
+}
+
+.skills-icons .js-icon {
+    color: #F7DE1F;
+}
+
+.skills-icons .react-icon {
+    color: #0FDBF6;
+}
+
+.skills-icons .python-icon {
+    color: #3775A8;
+}
+
+.skills-icons .git-icon {
+    color: #F05133;
+}
+
+/* ---------------------- CSS media queries ------------------- */
+
+@media only screen and (max-width: 1020px) {
+    .my-skills-container {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .my-skills-container {
+        width: 100%;
+        position: absolute;
+        left: 0%;
+    }
+    
+    .my-skills-container .text {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .my-skills-container {
+        font-size: 80px;
+    }
+
+    .skills-icons {
+        font-size: 300px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    @keyframes cycle2 {
+        0% {top: 0}
+       10% {top: 0}
+       20% {top: -300px}
+       30% {top: -300px}
+       40% {top: -600px}
+       50% {top: -600px}
+       60% {top: -900px}
+       70% {top: -900px}
+       80% {top: -1200px}
+       90% {top: -1200px}
+       100% {top: 0}
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .my-skills-container {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .my-skills {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .my-skills-container {
+        font-size: 50px;
+        margin: 100px auto;
+    }
+
+    .my-skills-container .text {
+        margin-right: 5px;
+    }
+
+    .skills-icons {
+        top: 150%;
+        transform: translateX(-50%);
+        left: 50%;
+        line-height: 0px;
+    }
+}

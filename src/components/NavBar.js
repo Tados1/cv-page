@@ -32,7 +32,7 @@ const NavBar = () => {
 
     <div className="social-networks">
         <a href="https://github.com/Tados1" target="_blank" rel="noopener noreferrer">< AiFillGithub /></a>
-        <a href="https://www.instagram.com/_tado.s_/" target="_blank" rel="noopener noreferrer">< AiOutlineLinkedin /></a>
+        <a href="https://www.linkedin.com/in/tade%C3%A1%C5%A1-%C5%A1trba-3910332aa/" target="_blank" rel="noopener noreferrer">< AiOutlineLinkedin /></a>
         <a href="https://www.instagram.com/_tado.s_/" target="_blank" rel="noopener noreferrer">< AiOutlineInstagram /></a>
         <a href="https://www.facebook.com/tadeas.ttado/" target="_blank" rel="noopener noreferrer">< AiOutlineFacebook /></a>
         

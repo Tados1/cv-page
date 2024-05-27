@@ -32,6 +32,7 @@ const Contact = () => {
             <div className="contact-box-text">
                 <h2>Let's Begin Creating Together</h2>
                 <p>Feel free to contact me and share your ideas, projects, and questions. Send me a message and let's begin creating together</p>
+                <p>(not functional, only for the visual page!!!)</p>
             </div>
 
             <form onSubmit={handleSubmit}>

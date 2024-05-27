@@ -12,7 +12,8 @@
     transform: translateX(-50%);
     left: 55%;
     font-size: 60px;
-    font-weight: normal;
+    font-weight: 700;
+    width: 100%;
 }
 
 .all-projects h1::after {
@@ -63,7 +64,6 @@
 
 .opacity-text p {
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .more-info {
@@ -131,7 +131,7 @@ article.next-slide {
 
 /* ---------------------- CSS media queries ------------------- */
 
-@media only screen and (max-width: 1750px) {
+@media only screen and (max-width: 2000px) {
     .opacity-text h2 {
         font-size: 40px;
         margin-bottom: 10px;
@@ -147,22 +147,20 @@ article.next-slide {
         height: 40%;
     }
 
-    .more-info button {
-        font-size: 25px;
-    }
-
-    .arrow-buttons {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
     .opacity-text h2 {
         font-size: 30px;
     }
     
     .opacity-text p {
         font-size: 17px;
+    }
+
+    .more-info button {
+        font-size: 25px;
+    }
+
+    .arrow-buttons {
+        font-size: 40px;
     }
 }
 
@@ -210,14 +208,20 @@ article.next-slide {
 }
 
 @media only screen and (max-width: 800px) {
-    
     .all-projects-content {
         height: 32%;
         left: 50%;
+        top: 40%;
     }
 
     .all-projects h1 {
         left: 50%;
+        top: 20%;
+        font-size: 27px;
+    }
+
+    .all-projects h1::after {
+        width: 300px;
     }
 
     .opacity-text h2 {
@@ -231,18 +235,9 @@ article.next-slide {
 }
 
 @media only screen and (max-width: 660px) {
-    
     .all-projects-content {
         width: 80%;
         height: 30%;
-    }
-
-    .all-projects h1 {
-        font-size: 40px;
-    }
-    
-    .all-projects h1::after {
-        width: 400px;
     }
 
     .opacity-text h2 {
@@ -258,7 +253,6 @@ article.next-slide {
 }
 
 @media only screen and (max-width: 570px) {
-    
     .all-projects-content {
         height: 27%;
     }
@@ -270,19 +264,9 @@ article.next-slide {
 }
 
 @media only screen and (max-width: 499px) {
-    .all-projects h1 {
-        font-size: 35px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-
-    .all-projects h1::after {
-        width: 350px;
-    }
-
     .opacity-text h2 {
         font-size: 18px;
         margin: 5px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .opacity-text p {

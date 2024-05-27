@@ -15,6 +15,7 @@
 
 .my-skills-container .text {
     margin-right: 40px;
+    font-weight: 700;
 }
 
 .my-skills-container > div {
@@ -26,52 +27,72 @@
 
 div.word-list span {
     display: block;
+    font-weight: 700;
 }
 
 div.word-list {
     position: relative;
     top: 0px;
-    animation: cycle ease 5s infinite; 
+    animation: cycle ease 7s infinite; 
 }
 
 @keyframes cycle {
     0% {top: 0}
-   8% {top: 0}
+   5% {top: 0}
+   11% {top: -150px}
    16% {top: -150px}
-   24% {top: -150px}
-   32% {top: -300px}
-   40% {top: -300px}
-   48% {top: -450px}
-   56% {top: -450px}
-   64% {top: -600px}
-   72% {top: -600px}
-   80% {top: -750px}
-   88% {top: -750px}
+   22% {top: -300px}
+   27% {top: -300px}
+   33% {top: -450px}
+   38% {top: -450px}
+   44% {top: -600px}
+   49% {top: -600px}
+   55% {top: -750px}
+   60% {top: -750px}
+   66% {top: -900px}
+   72% {top: -900px}
+   77% {top: -1050px}
+   82% {top: -1050px}
+   88% {top: -1200px}
+   94% {top: -1200px}
    100% {top: -0px}
 }
 
+
 span:nth-child(1) {
-    color: #E54D26;
-}
-
-span:nth-child(2) {
-    color: #264DE4;
-}
-
-span:nth-child(3) {
-    color: #F7DE1F;
-}
-
-span:nth-child(4) {
-    color: #0FDBF6;
-}
-
-span:nth-child(5) {
     color: #3775A8;
 }
 
-span:nth-child(6) {
+span:nth-child(2) {
     color: #F05133;
+}
+
+span:nth-child(3) {
+    color: #FFA518;
+}
+
+span:nth-child(4) {
+    color: #E54D26;
+}
+
+span:nth-child(5) {
+    color: #264DE4;
+}
+
+span:nth-child(6) {
+    color: #F7DE1F;
+}
+
+span:nth-child(7) {
+    color: #0FDBF6;
+}
+
+span:nth-child(8) {
+    color: #777BB3;
+}
+
+span:nth-child(9) {
+    color: #FF2D20;
 }
 
 .skills-icons {
@@ -88,23 +109,42 @@ span:nth-child(6) {
 
 .icon {
     position: relative;
-    animation: cycle2 ease 5s infinite;  
+    animation: cycle2 ease 7s infinite;  
 }
 
 @keyframes cycle2 {
     0% {top: 0}
-   8% {top: 0}
+   5% {top: 0}
+   11% {top: -400px}
    16% {top: -400px}
-   24% {top: -400px}
-   32% {top: -800px}
-   40% {top: -800px}
-   48% {top: -1200px}
-   56% {top: -1200px}
-   64% {top: -1600px}
-   72% {top: -1600px}
-   80% {top: -2000px}
-   88% {top: -2000px}
+   22% {top: -800px}
+   27% {top: -800px}
+   33% {top: -1200px}
+   38% {top: -1200px}
+   44% {top: -1600px}
+   49% {top: -1600px}
+   55% {top: -2000px}
+   60% {top: -2000px}
+   66% {top: -2400px}
+   72% {top: -2400px}
+   77% {top: -2800px}
+   82% {top: -2800px}
+   88% {top: -3200px}
+   95% {top: -3200px}
    100% {top: 0}
+}
+
+
+.skills-icons .python-icon {
+    color: #3775A8;
+}
+
+.skills-icons .git-icon {
+    color: #F05133;
+}
+
+.skills-icons .mysql-icon {
+    color: #FFA518;
 }
 
 .skills-icons .html-icon {
@@ -123,27 +163,27 @@ span:nth-child(6) {
     color: #0FDBF6;
 }
 
-.skills-icons .python-icon {
-    color: #3775A8;
+.skills-icons .php-icon {
+    color: #777BB3;
 }
 
-.skills-icons .git-icon {
-    color: #F05133;
+.skills-icons .laravel-icon {
+    color: #FF2D20;
 }
+
+
 
 /* ---------------------- CSS media queries ------------------- */
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1300px) {
     .my-skills-container {
         font-size: 100px;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .my-skills-container {
-        width: 100%;
-        position: absolute;
-        left: 0%;
+        font-size: 80px;
     }
     
     .my-skills-container .text {
@@ -151,57 +191,52 @@ span:nth-child(6) {
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 800px) {
     .my-skills-container {
-        font-size: 80px;
+        font-size: 65px;
     }
 
     .skills-icons {
-        font-size: 300px;
-        width: 300px;
-        height: 300px;
-    }
-    
-    @keyframes cycle2 {
-        0% {top: 0}
-       10% {top: 0}
-       20% {top: -300px}
-       30% {top: -300px}
-       40% {top: -600px}
-       50% {top: -600px}
-       60% {top: -900px}
-       70% {top: -900px}
-       80% {top: -1200px}
-       90% {top: -1200px}
-       100% {top: 0}
-    }
-    
-}
-
-@media only screen and (max-width: 550px) {
-    .my-skills-container {
-        font-size: 60px;
-    }
-}
-
-@media only screen and (max-width: 499px) {
-    .my-skills {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-
-    .my-skills-container {
-        font-size: 50px;
-        margin: 100px auto;
-    }
-
-    .my-skills-container .text {
-        margin-right: 5px;
-    }
-
-    .skills-icons {
-        top: 150%;
+        font-size: 200px;
+        width: 200px;
+        height: 200px;
         transform: translateX(-50%);
         left: 50%;
+        top: 160%;
         line-height: 0px;
+    }
+
+    @keyframes cycle2 {
+        0% {top: 0}
+       5% {top: 0}
+       11% {top: -200px}
+       16% {top: -200px}
+       22% {top: -400px}
+       27% {top: -400px}
+       33% {top: -600px}
+       38% {top: -600px}
+       44% {top: -800px}
+       49% {top: -800px}
+       55% {top: -1000px}
+       60% {top: -1000px}
+       66% {top: -1200px}
+       72% {top: -1200px}
+       77% {top: -1400px}
+       82% {top: -1400px}
+       88% {top: -1600px}
+       95% {top: -1600px}
+       100% {top: 0}
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .my-skills-container {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .my-skills-container {
+        font-size: 30px;
     }
 }

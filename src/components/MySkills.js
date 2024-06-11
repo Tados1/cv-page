@@ -8,6 +8,7 @@ import { RiJavascriptFill } from "react-icons/ri"
 import { FaReact } from "react-icons/fa"
 import { FaPhp } from "react-icons/fa";
 import { FaLaravel } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const MySkills = () => {
 
@@ -25,6 +26,7 @@ const MySkills = () => {
                         <span>CSS</span>
                         <span>JS</span>
                         <span>React</span>
+                        <span>Next.js</span>
                         <span>PHP</span>
                         <span>Laravel</span>
                     </div>
@@ -40,6 +42,7 @@ const MySkills = () => {
                     <FaCss3Alt className='css-icon icon'/>
                     <RiJavascriptFill className='js-icon icon'/>
                     <FaReact className='react-icon icon'/>
+                    <TbBrandNextjs className='nextjs-icon icon'/>
                     <FaPhp className='php-icon icon'/>
                     <FaLaravel className='laravel-icon icon'/>
             </div>

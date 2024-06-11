@@ -33,28 +33,20 @@ div.word-list span {
 div.word-list {
     position: relative;
     top: 0px;
-    animation: cycle ease 7s infinite; 
+    animation: cycleText ease 7s infinite; 
 }
 
-@keyframes cycle {
+@keyframes cycleText {
     0% {top: 0}
-   5% {top: 0}
-   11% {top: -150px}
-   16% {top: -150px}
-   22% {top: -300px}
-   27% {top: -300px}
-   33% {top: -450px}
-   38% {top: -450px}
-   44% {top: -600px}
-   49% {top: -600px}
-   55% {top: -750px}
-   60% {top: -750px}
-   66% {top: -900px}
-   72% {top: -900px}
-   77% {top: -1050px}
-   82% {top: -1050px}
-   88% {top: -1200px}
-   94% {top: -1200px}
+   10% {top: -150px}
+   20% {top: -300px}
+   30% {top: -450px}
+   40% {top: -600px}
+   50% {top: -750px}
+   60% {top: -900px}
+   70% {top: -1050px}
+   80% {top: -1200px}
+   90% {top: -1350px}
    100% {top: -0px}
 }
 
@@ -88,10 +80,14 @@ span:nth-child(7) {
 }
 
 span:nth-child(8) {
-    color: #777BB3;
+    color: #e6e6e6;
 }
 
 span:nth-child(9) {
+    color: #777BB3;
+}
+
+span:nth-child(10) {
     color: #FF2D20;
 }
 
@@ -109,28 +105,20 @@ span:nth-child(9) {
 
 .icon {
     position: relative;
-    animation: cycle2 ease 7s infinite;  
+    animation: cycleIcons ease 7s infinite;  
 }
 
-@keyframes cycle2 {
+@keyframes cycleIcons {
     0% {top: 0}
-   5% {top: 0}
-   11% {top: -400px}
-   16% {top: -400px}
-   22% {top: -800px}
-   27% {top: -800px}
-   33% {top: -1200px}
-   38% {top: -1200px}
-   44% {top: -1600px}
-   49% {top: -1600px}
-   55% {top: -2000px}
-   60% {top: -2000px}
-   66% {top: -2400px}
-   72% {top: -2400px}
-   77% {top: -2800px}
-   82% {top: -2800px}
-   88% {top: -3200px}
-   95% {top: -3200px}
+   10% {top: -400px}
+   20% {top: -800px}
+   30% {top: -1200px}
+   40% {top: -1600px}
+   50% {top: -2000px}
+   60% {top: -2400px}
+   70% {top: -2800px}
+   80% {top: -3200px}
+   90% {top: -3600px}
    100% {top: 0}
 }
 
@@ -161,6 +149,10 @@ span:nth-child(9) {
 
 .skills-icons .react-icon {
     color: #0FDBF6;
+}
+
+.skills-icons .nextjs-icon {
+    color: #e6e6e6;
 }
 
 .skills-icons .php-icon {
@@ -206,25 +198,17 @@ span:nth-child(9) {
         line-height: 0px;
     }
 
-    @keyframes cycle2 {
+    @keyframes cycleIcons {
         0% {top: 0}
-       5% {top: 0}
-       11% {top: -200px}
-       16% {top: -200px}
-       22% {top: -400px}
-       27% {top: -400px}
-       33% {top: -600px}
-       38% {top: -600px}
-       44% {top: -800px}
-       49% {top: -800px}
-       55% {top: -1000px}
-       60% {top: -1000px}
-       66% {top: -1200px}
-       72% {top: -1200px}
-       77% {top: -1400px}
-       82% {top: -1400px}
-       88% {top: -1600px}
-       95% {top: -1600px}
+       10% {top: -200px}
+       20% {top: -400px}
+       30% {top: -600px}
+       40% {top: -800px}
+       50% {top: -1000px}
+       60% {top: -1200px}
+       70% {top: -1400px}
+       80% {top: -1600px}
+       90% {top: -1800px}
        100% {top: 0}
     }
 }
